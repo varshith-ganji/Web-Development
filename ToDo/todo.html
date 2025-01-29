@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <title>Todo List Planner</title>
+    <link rel="stylesheet" href="todo.css">
+</head>
+
+<body>
+    <h1>Todo List Planner</h1>
+    <div class="input-container">
+        <input type="text" id="todo-input" placeholder="Enter a new todo">
+        <select id="priority-select" required>
+            <option value="" disabled selected>Priority</option>
+            <option value="low">Low</option>
+            <option value="medium">Medium</option>
+            <option value="high">High</option>
+        </select>
+        <button onclick="addTodo()">Add Todo</button>
+    </div>
+    <ul id="todo-list"></ul>
+    <button onclick="clearAllTodos()">Clear All Todos</button>
+    <script src="todo.js"></script>
+</body>
+
+</html>
